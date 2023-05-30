@@ -1,0 +1,27 @@
+{
+  "name": "reader",
+  "version": "1",
+  "description": "CS + reader",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "<todo>"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "2.0.0-beta.3",
+    "@sveltejs/vite-plugin-svelte": "1.1.0",
+    "@tsconfig/svelte": "3.0.0",
+    "@types/chrome": "^0.0.200",
+    "bulma": "^0.9.4",
+    "svelte": "3.52.0",
+    "svelte-check": "2.9.2",
+    "tslib": "2.4.0",
+    "typescript": "^4.8.4",
+    "vite": "3.2.0"
+  }
+}

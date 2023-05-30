@@ -1,0 +1,12 @@
+// vite tsconfig
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "esnext",
+    "target": "ES2020",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["vite.config.ts", "package.json", "src/config/*.ts"]
+}
