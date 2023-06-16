@@ -21,7 +21,7 @@ $: maxProgress = $currentArticles.length - 1;
   target="_blank"
   class="subtitle"
   title="Sammelbox: {name}">
-  „{@html shortName}“
+  „{@html shortName}“ | Artikel {currentProgress + 1} von {maxProgress + 1}
   <progress
     class="progress is-small"
     max={maxProgress}
