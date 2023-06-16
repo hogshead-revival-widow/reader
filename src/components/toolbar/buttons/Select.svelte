@@ -17,6 +17,7 @@ const catchKey = (e: KeyboardEvent) =>
 <svelte:window on:keydown={catchKey} />
 
 <button
+  title="ENTER: Artikel auswählen"
   class="button is-dark"
   class:is-outlined={!$currentArticleIsSelected}
   on:click={selectedArticles.toggleCurrentArticle}
