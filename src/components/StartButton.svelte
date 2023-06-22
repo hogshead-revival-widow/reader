@@ -19,7 +19,5 @@ onDestroy(() => clearInterval(interval));
     <i
       aria-hidden="true"
       class="icon button newspaper large" />
-
-    !!!!!!!!!!!
   </button>
 {/if}
