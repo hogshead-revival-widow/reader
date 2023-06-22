@@ -25,7 +25,7 @@ $: promisedArticle = currentArticles.getFulltext($currentArticleId);
       title="Artikel auswählen"
       class="heart is-size-1 has-background-light">
       <span
-        class:has-text-dark={$currentArticleIsSelected}
+        class:has-text-danger={$currentArticleIsSelected}
         class:has-text-grey-light={!$currentArticleIsSelected}>
         ♥
       </span></button>
