@@ -47,12 +47,6 @@ const ANIMATION = {
 } as const;
 
 const WARNING_THRESHOLD_ARTICLE_AMOUNT = 15 as const;
-const KEYS = {
-  ACCEPT: 'Control',
-  TOGGLE_OVERVIEW: 'Alt',
-  RESET: 'Backspace',
-  SELECT: 'Enter',
-} as const;
 
 const PLACEHOLDER_ARTICLE: Article = {
   author: '',
@@ -71,12 +65,19 @@ const PLACEHOLDER_ARTICLE: Article = {
   },
 };
 
+const HOTKEYS = {
+  SELECT: 'Enter',
+  ACCEPT: 'Shift',
+  TOGGLE_OVERVIEW: 'Alt',
+  RESET: 'Backspace',
+} as const;
+
 const INTERFACE = {
   PLACEHOLDER_ARTICLE,
   WARNING_THRESHOLD_ARTICLE_AMOUNT,
   ANIMATION,
   LOADER_DELAY,
-  KEYS,
+  HOTKEYS,
 } as const;
 
 export const CONSTS = {

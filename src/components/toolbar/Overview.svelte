@@ -1,4 +1,5 @@
 <script lang="ts">
+import { HOTKEYS } from 'src/lib/hotkeys';
 import { blur, fade, fly } from 'svelte/transition';
 
 import { CONSTS } from '../../config/consts';
@@ -11,8 +12,7 @@ import {
   selectedArticles,
 } from '../../lib/stores';
 import Metadata from '../text/Metadata.svelte';
-import Accept from './buttons/Accept.svelte';
-import Reset from './buttons/Reset.svelte';
+import Hotkey from './Hotkey.svelte';
 
 const catchKey = (e: KeyboardEvent) => {
   if (!$isOverviewOpen) return;
@@ -68,8 +68,16 @@ $: $isOverviewOpen
 
               <td>
                 <div class="buttons">
-                  <Reset />
-                  <Accept />
+                  <Hotkey
+                    hotkey={{
+                      ...HOTKEYS.RESET,
+                      ignoreHotkeyIfOverviewIsOpen: true,
+                    }} />
+                  <Hotkey
+                    hotkey={{
+                      ...HOTKEYS.ACCEPT,
+                      ignoreHotkeyIfOverviewIsOpen: true,
+                    }} />
                 </div>
               </td>
             </tr>

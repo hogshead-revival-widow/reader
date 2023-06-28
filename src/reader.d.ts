@@ -6,6 +6,17 @@ interface CustomEventMap {
   click_outside: CustomEvent<ClickOutside>;
 }
 
+interface IHotkey {
+  key: string;
+  label: string;
+  title: string;
+  action: () => void;
+  ignoreHotkeyIfOverviewIsOpen?: true;
+  fillButtonIfCurrentArticleIsSelected?: true;
+  dependsOnHasSelected?: true;
+  isDestructive?: true;
+}
+
 type Article = {
   id: string;
   urls: {

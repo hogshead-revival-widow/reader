@@ -1,16 +1,11 @@
 <script lang="ts">
 import 'bulma/css/bulma.css';
 
-import { closeReader } from '../lib/closeReader';
-import {
-  currentArticleId,
-  isOverviewOpen,
-  selectedArticles,
-} from '../lib/stores';
+import { currentArticleId } from '../lib/stores';
 import Loader from './text/Loader.svelte';
 import Text from './text/Text.svelte';
-import Buttons from './toolbar/Buttons.svelte';
 import CollectionBoxInfo from './toolbar/CollectionBoxInfo.svelte';
+import Hotkeys from './toolbar/Hotkeys.svelte';
 import Nav from './toolbar/Nav.svelte';
 import Overview from './toolbar/Overview.svelte';
 import Pagination from './toolbar/Pagination.svelte';
@@ -30,7 +25,7 @@ let openArticle: (which: number | 'next' | 'previous') => number;
       slot="center"
       name={collectionBoxName}
       href={collectionBoxHref} />
-    <Buttons slot="end" />
+    <Hotkeys slot="end" />
   </Nav>
 
   <div class="section">
